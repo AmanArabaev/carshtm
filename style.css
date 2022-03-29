@@ -1,0 +1,378 @@
+html,
+body {
+	height: 100%;
+	
+}
+li{
+	line-height:2;
+	}
+.container{
+	display:flex;
+	flex-direction:column;
+	border:1px solid white;
+	height:100%;
+	max-width:1366px;
+	margin:0px auto;
+	
+}
+.header{
+	display:flex;
+	height:100%;
+	width:100%;
+	color:red;
+} 
+.banner{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	border:1px solid black;
+	height:100px;
+	width:100%;
+	background:linear-gradient(to top right, pink, black);
+	font-family: Impact, fantasy;
+	font-size:30px;
+} 
+.middle{
+	display:flex;
+	width:100%;
+	height:100%;
+	flex: 1 0 auto;
+} 
+.menu{
+	display:flex;
+	width:20%;
+	background:black;
+	color:red;
+	font-size:20px;
+	height:100%;
+	
+} 
+.content{
+	display:flex;
+	flex-direction:column;
+	justify-content:start;
+	align-items:start;
+	background:black; 
+	width:100%;
+	height:100%;
+	font-size:20px;
+	font-weight:bold;
+	color:red;
+}
+
+.footer{
+	display:flex;
+	height:66px;
+	border:1px solid black;
+	width:100%;
+	color:red;
+	flex: 0 0 auto;
+	font-weight:bold;
+}
+.soc-icons{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	height:100%;
+	width:100%;
+	background:linear-gradient(to bottom right, pink, black);
+	border:1px solid black;
+	border:1px solid black;
+} 
+.table{
+	width:400px;
+	border:2px solid yellow;
+}
+.back{
+	width:10px;
+	border:1px solid yellow;
+}
+.front{
+	width:50px;
+	border:1px solid yellow;
+	color:red;
+}
+.table1{
+	min-width:100px;
+	border:2px solid black;
+	background:linear-gradient(to bottom right, yellow, black)
+	
+}
+
+.back1{
+	width:15px;
+	border:1px solid black;
+}
+.front1{
+	width:10px;
+	border:1px solid black;
+	color:red;
+}
+.tableparrent{
+	font-size:20px;
+}
+
+@media (max-width:1206px){
+		.container{
+			max-width:1050px;
+			min-height:100%;
+		}
+	}
+@media (max-width:1050px){
+		.container{
+			max-width:992px;
+			min-height:100%;
+		}
+	}
+
+@media (max-width:320px){
+		.container{
+			max-width:none;
+			min-height:100vh;
+		}
+	}
+	
+@media only screen and (max-width:992px){
+		.middle{
+			display:flex;
+			width:100%;
+			flex: 1 0 auto;
+		} 
+	}	
+@media only screen and (max-width: 992px){
+		.menu{ 
+			display:flex;
+			width:200px;
+			font-size:20px;
+			height:100%;
+		}
+		li{ 
+			line-height:2;
+		} 
+	}
+@media only screen and (max-width: 767px){
+		.menu{ 
+			display:flex;
+			padding: 10px;
+			width:200px;
+			font-size:15px;
+			position: fixed;
+			height:100%;
+			left: -320px;
+			transition: left 500ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+		}
+		li{ 
+			line-height:2;
+		} 
+	}
+@media only screen and (min-width: 768px){
+		#burgermenu{
+			display:none;
+		}
+	}
+@media only screen and (max-width: 992px){
+		.content { 
+			display:flex;
+			flex-direction:column;
+			background:linear-gradient(to bottom right, black,black);
+			width:100%;
+			min-height:100%;
+			font-size:15px;
+		} 
+		#koka{
+			align-self:flex-end;
+		}
+	}	
+
+@media only screen and (max-width: 992px){
+		.footer{
+			display:flex;
+			height:50px;
+			border:1px solid black;
+			width:100%;
+			background:linear-gradient(to bottom right, black, pink);
+			color:red;
+			flex: 0 0 auto;
+		}
+	}
+@media only screen and (max-width: 992px){
+		.table{ 
+			width:300px;
+			border:2px solid yellow;
+			color:red;
+			font-size:20px;
+		} 
+	}
+@media only screen and (max-width: 992px){
+		.table1{ 
+			display:none;
+		}
+		.stily{
+			display:none;
+		}
+		
+		
+	}	
+
+@media only screen and (min-width: 768px){
+		.table_little{
+			
+			display:none;
+		
+		}
+		.shrifts{
+			
+			display:none;
+		}
+		
+	}
+@media only screen and (min-width: 992px){
+		.table_little2{
+			
+			display:none;
+		
+		}
+		.shrifts2{
+			
+			display:none;
+		}
+		
+	}
+@media only screen and (max-width: 767px){
+		.table_little2{
+			
+			display:none;
+		
+		}
+		.shrifts2{
+			
+			display:none;
+		}
+		
+	}
+@media only screen and (max-width: 992px){
+		.table_little2{
+			font-size:22px;
+			text-align:center;
+			border:1px solid white;
+			width:350px;
+			height:100px;
+			color:red;
+			background:linear-gradient(to bottom right, yellow, black);
+			
+		}
+		.shrifts2{
+			font-size:15px;
+			border:1px solid white;
+			width:80px;
+			color:black;
+			text-align:left;
+		}
+	}
+@media only screen and (max-width: 768px){
+		.table_little{
+			font-size:8px;
+			text-align:center;
+			border:1px solid white;
+			width:150px;
+			height:100px;
+			color:red;
+			background:linear-gradient(to bottom right, yellow, black);
+			
+		}
+		.shrifts{
+			font-size:7px;
+			border:1px solid white;
+			width:43px;
+			color:black;
+			text-align:left;
+		}
+	}
+@media only screen and (max-width: 768px){
+		#img { 
+			width:300px;
+		} 
+	}
+	
+@media only screen and (max-width: 280px){
+		.table_little{
+			font-size:px;
+			text-align:center;
+			border:1px solid white;
+			width:200px;
+			height:130px;
+			color:red;
+			
+		}
+		.shrifts{
+			font-size:5px;
+			border:1px solid white;
+			width:35px;
+			color:black;
+			text-align:left;
+			font-weight:bold;
+		}
+		#img { 
+			width:260px;
+		} 
+		.table{
+			width:200px;
+			border:2px solid yellow;
+		}
+		.back{
+			width:10px;
+			border:1px solid yellow;
+		}
+		.front{
+			width:50px;
+			border:1px solid yellow;
+			color:red;
+		}
+	}
+.burger{
+	position:relative;
+	top: 60px;
+	width: 100px;
+	background:linear-gradient(to bottom right, black, black);
+}
+.burger, .burger:before, .burger:after{
+	width:50px;
+	position: absolute;
+	height: 10px;
+	background: red;
+	display: flex;
+	transition: .3s;
+	border-radius: 5px;
+}
+.burger:before{
+	content: "";
+	top: -20px;
+	transition: top 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger:after{
+	content: "";
+	bottom: -20px;
+	transition: bottom 300ms 300ms, transform 300ms cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.burger.active:before{
+	content: "";
+	top: 0px;
+	transform: rotate(45deg);
+	transition: top 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger.active:after{
+	content: "";
+	bottom: 0;
+	transform: rotate(-45deg);
+	transition: bottom 500ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.burger.active{
+	background: rgba(255, 255, 255, 0); 
+}
+.menu.animate{
+	height:200px;
+	left: 0;
+}

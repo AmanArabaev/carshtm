@@ -1,0 +1,77 @@
+<!DCTYPE html>
+<html>
+	<head>
+		<title>News</title>
+		<link rel="stylesheet" href="style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<div id="burgermenu" class="burger"></div>
+				<div class="banner" id="banner">Новости</div>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,green)"	+
+					data-shrift="URW Chancery L, cursive" data-shrift2="linear-gradient(to bottom right,black,lightgray)">Style 1</button><br>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,purple)" +
+					data-shrift="Arial" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,#722f37)">Style 2</button><br>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,blue)" +
+					data-shrift="Bradley Hand, cursive" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,orange)">Style 3</button><br>
+			</div>
+			<div class="middle">
+				<div id="menu" class="menu">
+					<ul>
+						<li>
+							<a href="main.html">
+								Главная
+							</a>
+						</li>
+						<li>
+							<a href="index.html">
+								Каталог
+							</a>
+						</li>
+						<li>
+							<b>
+								Новости
+							</b>
+						</li>
+						<li>
+							<a href="contacts.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="koka" class="content">
+					<ul>
+						<li>
+							<a href="https://www.bmw-avilon.ru/all-news/">Новости BMW</a>
+						</li>
+						<li>
+							<a href="https://www.toyota.ru/news_and_events/">Новости Toyota</a>
+						</li>
+						<li>
+							<a href="https://www.autostat.ru/tags/mark_model/36/">Новости Ford</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="footer">
+				<div id="koka1" class="soc-icons">
+					Copyright @AmanSXSoft
+				</div>
+				<button onclick="translate_econtacts(this)" data-transl="News" 
+					data-transl1="<ul><li><a href='main.html'>Main</a></li><li><a href='index.html'>Catalog</a></li><li><b>News</b></li><li><a href='contacts.html'>Contacts</a></li></ul>" 
+					data-transl2="<ul><li><a href='https://www.bmw-avilon.ru/all-news/'>News BMW</a></li><li><a href='https://www.toyota.ru/news_and_events/'>News Toyota</a></li><li><a href='https://www.autostat.ru/tags/mark_model/36/'>News Ford</a></li></ul>" 
+					data-transl3="<p>Copyright @AmanSXSoft</p>">English</button>
+				<button onclick="translate_econtacts(this)" data-transl="Новости" 
+					data-transl1="<ul><li><a href='main.html'>Главная</a></li><li><a href='index.html'>Каталог</a></li><li><b>Новости</b></li><li><a href='contacts.html'>Контакты</a></li></ul>" 
+					data-transl2="<ul><li><a href='https://www.bmw-avilon.ru/all-news/'>Новости BMW</a></li><li><a href='https://www.toyota.ru/news_and_events/'>Новости Toyota</a></li><li><a href='https://www.autostat.ru/tags/mark_model/36/'>Новости Ford</a></li></ul>" 
+					data-transl3="<p>Все права защишены</p>">Русский</button>
+			</div>
+		</div>
+		<script src="script.js">
+		</script>
+	</body>
+</html>

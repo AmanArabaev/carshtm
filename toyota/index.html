@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Catalog</title>
+		<link rel="stylesheet" href="../style.css">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body class="body">
+		<div class="container">
+			<div class="header">
+				<div id="burgermenu" class="burger"></div>
+				<div class="banner" id="banner">Каталог</div>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,green)"	
+					data-shrift="URW Chancery L, cursive" data-shrift2="linear-gradient(to bottom right,black,lightgray)">Style 1</button><br>
+				<button  class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,purple)" 
+					data-shrift="Arial" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,#722f37)">Style 2</button><br>
+				<button  class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,blue)" 
+					data-shrift="Bradley Hand, cursive" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,orange)">Style 3</button><br>
+			</div>
+			<div class="middle">
+				<div class="menu" id="menu">
+					<ul>
+						<li>
+							<a href="../main.html">
+								Главная
+							</a>
+						</li>
+						<li>
+							<b>
+								Каталог
+							</b>
+						</li>
+						<li>
+							<a href="../news.html">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="../contacts.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="content" id ="kontent">
+					<div style="background:linear-gradient(to bottom right,black,yellow)" id="koka">
+						<span id="photo"></span><br>
+						<b>Год выпуска:</b><span id="behavipusk"></span><br>
+						<b>Цена:</b><span id="cost"></span><br>
+					</div>
+					<div id="koka" class="tableparrent">
+						<h2>Toyota</h2>
+						<table class="table1">
+							<tr>
+								<td class="back1">
+									#
+								</td>
+								<td class="front1" id = "demo">
+									<center>Название авто</center>
+								</td>
+								<td class="front1"  id = "demo1">
+									<center>Сведения</center>
+								</td>
+								<td class="front1"  id = "demo2">
+									<center>Начальная цена<center>
+								</td>
+								<td class="front1"  id = "demo3">
+									<center>Процент скидки</center>
+								</td>
+								<td class="front1"  id = "demo4">
+									<center>Вычислить скидку</center>
+								</td>
+								<td class="front1"  id = "demo5">
+									<center>Итого</center>
+								</td>
+							</tr>
+							<tr>
+								<td class="back1">
+									1
+								</td>
+								<td class="front1">
+									<a href="camry70.html">Tayota1</a>
+								</td>
+								<td class="front1">
+									<center><button onclick="info_mashina(this)" data-photo="<img src='../images/70.jpg' width='200' id='img'>"  data-behavipusk="1996"  data-cost="5000$"><span id="demo7">Просмотр</span></button></center>
+								</td>
+								<td class="front1">
+									<input type="number" id="price1" value="5000">
+								</td>
+								<td class="front1">
+									<input type="number" id="discount1">
+								</td>
+								<td class="front1">
+									<center><button onclick="move1(this)" data-price="price1" data-discount="discount1" data-total="total1"><span id="demo8">Просмотр</span></button></center> 
+								</td>
+								<td class="front1">
+									<input type="text" id="total1">
+								</td>
+							</tr>
+							<tr>
+								<td class="back1">
+									2
+								</td>
+								<td class="front1">
+									<a href="lc200.html">Tayota2</a>
+								</td>
+								<td class="front1">
+									<center><button onclick="info_mashina(this)" data-photo="<img src='../images/200.jpg' width='200' id='img'>"  data-behavipusk="2019"  data-cost="10000$"><span id="demo9">Просмотр</span></button></center>
+								</td>
+								<td class="front1">
+									<input type="number" id="price2" value="10000">
+								</td>
+								<td class="front1">
+									<input type="number" id="discount2">
+								</td>
+								<td class="front1">
+									<center><button onclick="move1(this)" data-price="price2" data-discount="discount2" data-total="total2"><span id="demo10">Просмотр</span></button></center>
+								</td>
+								<td class="front1">
+									<input type="text" id="total2">
+								</td>
+							</tr>
+							<tr>
+								<td class="back1">
+									3
+								</td>
+								<td class="front1">
+									<a href="lc300.html">Tayota3</a>
+								</td>
+								<td class="front1">
+									<center><button onclick="info_mashina(this)" data-photo="<img src='../images/300.jpg' width='200' id='img'>"  data-behavipusk="2018"  data-cost="10000$"><span id="demo11">Просмотр</span></button></center>
+								</td>
+								<td class="front1">
+									<input type="number" id="price3" value="10000">
+								</td>
+								<td class="front1">
+									<input type="number" id="discount3">
+								</td>
+								<td class="front1">
+									<center><button onclick="move1(this)" data-price="price3" data-discount="discount3" data-total="total3"><span id="demo12">Просмотр</span></button><center>
+								</td>
+								<td class="front1">
+									<input type="text" id="total3">
+								</td>
+							</tr>
+						</table>
+						<table class="table_little">
+							<tr>
+								<td>
+									#
+								</td>
+								<td id = "demosmall1">
+									Названия
+								</td>
+								<td id = "demosmall2">
+									Сведения
+								</td>
+								<td id = "demosmall3">
+									Цена
+								</td>
+								<td id = "demosmall4">
+									Скидка
+								</td>
+								<td id = "demosmall5">
+									Считать
+								</td>
+								<td id = "demosmall6">
+									Итого
+								</td>
+							</tr>
+							<tr>
+								<td>
+									1
+								</td>
+								<td>
+									<a href="camry70.html">Tayota1</a>
+								</td>
+								<td>
+									<button  class="shrifts" onclick="info_mashina(this)" data-photo="<img src='../images/70.jpg' width='200' id='img'>"  data-behavipusk="1996"  data-cost="5000$"><span id="demosmall7">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="pricesmall" value="5000">
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="discount1small">
+								</th>
+								<td>
+									<button  class="shrifts" onclick="move1(this)" data-price="pricesmall" data-discount="discount1small" data-total="total1small"><span id="demosmall8">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="text" id="total1small">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2
+								</td>
+								<td>
+									<a href="lc200.html">Tayota2</a>
+								</td>
+								<td>
+									<button  class="shrifts" onclick="info_mashina(this)" data-photo="<img src='../images/200.jpg' width='200' id='img'>"  data-behavipusk="2018"  data-cost="10000$"><span id="demosmall9">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="pricesmall1" value="10000">
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="discount1small1">
+								</th>
+								<td>
+									<button  class="shrifts" onclick="move1(this)" data-price="pricesmall1" data-discount="discount1small1" data-total="total1small1"><span id="demosmall10">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="text" id="total1small1">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									3
+								</td>
+								<td>
+									<a href="lc300.html">Tayota3</a>
+								</td>
+								<td>
+									<button  class="shrifts" onclick="info_mashina(this)" data-photo="<img src='../images/300.jpg' width='200' id='img'>"  data-behavipusk="2019"  data-cost="10000$"><span id="demosmall11">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="pricesmall2" value="10000">
+								</td>
+								<td>
+									<input  class="shrifts" type="number" id="discount1small2">
+								</th>
+								<td>
+									<button  class="shrifts" onclick="move1(this)" data-price="pricesmall2" data-discount="discount1small2" data-total="total1small2"><span id="demosmall12">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts" type="text" id="total1small2">
+								</td>
+							</tr>
+						</table>
+						<table class="table_little2">
+							<tr>
+								<td>
+									#
+								</td>
+								<td id = "demosmall13">
+									Названия
+								</td>
+								<td id = "demosmall14">
+									Сведения
+								</td>
+								<td id = "demosmall15">
+									Цена
+								</td>
+								<td id = "demosmall16">
+									Скидка
+								</td>
+								<td id = "demosmall17">
+									Считать
+								</td>
+								<td id = "demosmall18">
+									Итого
+								</td>
+							</tr>
+							<tr>
+								<td>
+									1
+								</td>
+								<td>
+									<a href="camry70.html">Tayota1</a>
+								</td>
+								<td>
+									<button  class="shrifts2" onclick="info_mashina(this)" data-photo="<img src='../images/70.jpg' width='200' id='img'>"  data-behavipusk="1996"  data-cost="5000$"><span id="demosmall19">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="pricesmall3" value="5000">
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="discount1small3">
+								</th>
+								<td>
+									<button  class="shrifts2" onclick="move1(this)" data-price="pricesmall3" data-discount="discount1small3" data-total="total1small3"><span id="demosmall20">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="text" id="total1small3">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									2
+								</td>
+								<td>
+									<a href="lc200.html">Tayota2</a>
+								</td>
+								<td>
+									<button  class="shrifts2" onclick="info_mashina(this)" data-photo="<img src='../images/200.jpg' width='200' id='img'>"  data-behavipusk="2018"  data-cost="10000$"><span id="demosmall21">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="pricesmall4" value="10000">
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="discount1small4">
+								</th>
+								<td>
+									<button  class="shrifts2" onclick="move1(this)" data-price="pricesmall4" data-discount="discount1small4" data-total="total1small4"><span id="demosmall22">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="text" id="total1small4">
+								</td>
+							</tr>
+							<tr>
+								<td>
+									3
+								</td>
+								<td>
+									<a href="lc300.html">Tayota3</a>
+								</td>
+								<td>
+									<button  class="shrifts2" onclick="info_mashina(this)" data-photo="<img src='../images/300.jpg' width='200' id='img'>"  data-behavipusk="2019"  data-cost="10000$"><span id="demosmall23">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="pricesmall5" value="10000">
+								</td>
+								<td>
+									<input  class="shrifts2" type="number" id="discount1small5">
+								</th>
+								<td>
+									<button  class="shrifts2" onclick="move1(this)" data-price="pricesmall5" data-discount="discount1small5" data-total="total1small5"><span id="demosmall24">Просмотр</span></button>
+								</td>
+								<td>
+									<input  class="shrifts2" type="text" id="total1small5">
+								</td>
+							</tr>
+						</table>
+						<br>
+						<a href="../index.html" id="demo6">На главную</a>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="soc-icons" id="koka1">Copyright @AmanSXSoft</div>
+				<button onclick = "translate_econtacts(this)" data-transl="Catalog" 
+					data-transl1="<ul><li><a href='../main.html'>Main</a></li><li><b>Catalog</b></li><li><a href='../news.html'>News</a></li><li><a href='../contacts.html'>Contacts</a></li></ul>" 
+					data-transl2="<span id='photo'></span><br><b>Year of creat:</b><span id='behavipusk'></span><br><b>Cost:</b><span id='cost'></span><br>" 
+					data-demo="<td class='front' id = 'demo'><center>Cars name</center></td>" data-demo1="<td class='front'  id = 'demo1'><center>About car</center></td>" data-demo2="<td class='front' id = 'demo2'><center>Starting price<center></td>" 
+					data-demo3="<td class='front' id = 'demo3'><center>Discount percentage</center></td>" data-demo4="<td class='front' id = 'demo4'><center>Calculate Discount</center></td>" data-demo5="<td class='front' id = 'demo5'><center>Total price</center></td>" 
+					data-transl3="<p>Copyright @AmanSXSoft</p>" data-demo6="<a href='../index.html'>To main</a>"
+					data-byton="<span id='demo7'>Browsing</span>"
+					data-byton1="<span id='demo8'>Browsing</span>"
+					data-byton2="<span id='demo9'>Browsing</span>"	
+					data-byton3="<span id='demo10'>Browsing</span>"
+					data-byton4="<span id='demo11'>Browsing</span>"
+					data-byton5="<span id='demo12'>Browsing</span>"
+					data-demosmall1="Name" 
+					data-demosmall2="About"
+					data-demosmall3="Price"
+					data-demosmall4="Discount"
+					data-demosmall5="Calculate"
+					data-demosmall6="Total"
+					data-demosmall7="Browsing"
+					data-demosmall8="Browsing"
+					data-demosmall9="Browsing"
+					data-demosmall10="Browsing"
+					data-demosmall11="Browsing"
+					data-demosmall12="Browsing"
+					data-demosmall13="Name" 
+					data-demosmall14="About"
+					data-demosmall15="Price"
+					data-demosmall16="Discount"
+					data-demosmall17="Calculate"
+					data-demosmall18="Total"
+					data-demosmall19="Browsing"
+					data-demosmall20="Browsing"
+					data-demosmall21="Browsing"
+					data-demosmall22="Browsing"
+					data-demosmall23="Browsing"
+					data-demosmall24="Browsing">
+					English
+				</button>
+				<button onclick = "translate_econtacts(this)" data-transl="Каталог"
+					data-transl1="<ul><li><a href='../main.html'>Главная</a></li><li><b>Каталог</b></li><li><a href='../news.html'>Новости</a></li><li><a href='../contacts.html'>Контакты</a></li></ul>" 
+					data-transl2="<span id='photo'></span><br><b>Год выпуска:</b><span id='behavipusk'></span><br><b>Цена:</b><span id='cost'></span><br>" data-demo="<td class='front' id = 'demo'><center>Названия авто</center></td>" 
+					data-demo1="<td class='front'id = 'demo1'><center>Сведения</center></td>"data-demo2="<td class='front' id = 'demo2'><center>Начальная цена<center></td>" data-demo3="<td class='front'id = 'demo3'><center>Процент скидки</center></td>" 
+					data-demo4="<td class='front' id = 'demo4'><center>Вычислить скидку</center></td>" data-demo5="<td class='front' id = 'demo5'><center>Итого</center></td>" data-transl3="<p>Все права защишены</p>" 
+					data-demo6="<a href='../index.html'>На главную</a>"
+					data-byton="<span id='demo7'>Просмотр</span>"
+					data-byton1="<span id='demo8'>Просмотр</span>"
+					data-byton2="<span id='demo9'>Просмотр</span>"	
+					data-byton3="<span id='demo10'>Просмотр</span>"
+					data-byton4="<span id='demo11'>Просмотр</span>"
+					data-byton5="<span id='demo12'>Просмотр</span>"
+					data-demosmall1="Название" 
+					data-demosmall2="Сведения"
+					data-demosmall3="Цена"
+					data-demosmall4="Скидка"
+					data-demosmall5="Считать"
+					data-demosmall6="Итого"
+					data-demosmall7="Просмотр"
+					data-demosmall8="Просмотр"
+					data-demosmall9="Просмотр"
+					data-demosmall10="Просмотр"
+					data-demosmall11="Просмотр"
+					data-demosmall12="Просмотр"
+					data-demosmall13="Названия"
+					data-demosmall14="Сведения"
+					data-demosmall15="Цена"
+					data-demosmall16="Скидка"
+					data-demosmall17="Считать"
+					data-demosmall18="Итого"
+					data-demosmall19="Просмотр"
+					data-demosmall20="Просмотр"
+					data-demosmall21="Просмотр"
+					data-demosmall22="Просмотр"
+					data-demosmall23="Просмотр"
+					data-demosmall24="Просмотр">
+					Русский
+				</button>
+			</div>
+		</div>
+		<script src="../script.js">
+		</script>
+	</body>
+</html>

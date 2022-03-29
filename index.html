@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Catalog</title>
+		<link rel="stylesheet" href="style.css">
+		 <meta name="viewport" content="width=device-width, initial-scale=1">
+		 <meta charset="UTF-8">
+	</head>
+	<body class="body">
+		<div class="container">
+			<div class="header">
+				<div id="burgermenu" class="burger"></div>
+				<div id="banner" class="banner">
+					Каталог
+				</div>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,green)" 
+					data-shrift="URW Chancery L, cursive" data-shrift2="linear-gradient(to bottom right,black,lightgray)">Style 1</button><br>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,purple)" 
+					data-shrift="Arial" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,#722f37)">Style 2</button><br>
+				<button class="stily" onclick="style_element(this)" data-color="linear-gradient(to bottom right,black,blue)" 
+					data-shrift="Bradley Hand, cursive" data-shrift1="red" data-shrift2="linear-gradient(to bottom right,black,orange)">Style 3</button><br>
+			</div>
+			<div class="middle">
+				<div id="menu" class="menu">
+					<ul>
+						<li>
+							<a href="main.html">
+								Главная
+							</a>
+						</li>
+						<li>
+							<b>
+								Каталог
+							</b>
+						</li>
+						<li>
+							<a href="news.html">
+								Новости
+							</a>
+						</li>
+						<li>
+							<a href="contacts.html">
+								Контакты
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div id="koka" class="content">
+					<h2>Cars</h2>
+					<table class="table">
+						<tr>
+							<td class="back">
+								#
+							</td>
+							<td class="front">
+								Название авто
+							</td> 
+						</tr>
+						<tr>
+							<td class="back">
+								1
+							</td>
+							<td class="front">
+								<a href="bmw/index.html">BMW</a>
+							</td> 
+						</tr>
+						<tr>
+							<td class="back">
+								2
+							</td>
+							<td class="front">
+								<a href="toyota/index.html">Toyota</a>
+							</td> 
+						</tr>
+						<tr>
+							<td class="back">
+								3
+							</td>
+							<td class="front">
+								<a href="ford/index.html">Ford</a>
+							</td>
+						</tr>	
+					</table>
+				</div>
+			</div>
+			<div class="footer">
+				<div id="koka1" class="soc-icons">
+					<p>Copyright @AmanSXSoft</p>
+				</div>
+				<button onclick="translate_e('Catalog','<ul><li><a href=\'main.html\'>Main</a></li><li><b>Catalog</b></li><li><a href=\'news.html\'>News</a></li><li><a href=\'contacts.html\'>Contacts</a></li></ul>','<h2>Cars</h2><table class=\'table\'><tr><td class=\'back\'>#</td><td class=\'front\'>Cars names</td></tr><tr><td class=\'back\'>1</td><td class=\'front\'><a href=\'bmw/index.html\'>BMW</a></td></tr><tr><td class=\'back\'>2</td><td class=\'front\'><a href=\'toyota/index.html\'>Toyota</a></td></tr><tr><td class=\'back\'>3</td><td class=\'front\'><a href=\'ford/index.html\'>Ford</a></td></tr></table>','<p>Copyright @AmanSXSoft</p>')">English</button>
+				<button onclick="translate_r('Каталог','<ul><li><a href=\'main.html\'>Главная</a></li><li><b>Каталог</b></li><li><a href=\'news.html\'>Новости</a></li><li><a href=\'contacts.html\'>Контакты</a></li></ul>','<h2>Машины</h2><table class=\'table\'><tr><td class=\'back\'>#</td><td class=\'front\'>Названия</td></tr><tr><td class=\'back\'>1</td><td class=\'front\'><a href=\'bmw/index.html\'>BMW</a></td></tr><tr><td class=\'back\'>2</td><td class=\'front\'><a href=\'toyota/index.html\'>Toyota</a></td></tr><tr><td class=\'back\'>3</td><td class=\'front\'><a href=\'ford/index.html\'>Ford</a></td></tr></table>','<p>Все права зашищены</p>')">Русский</button>
+			</div>
+		</div>
+		<script src="script.js">
+		</script>
+	</body>
+</html>
+
