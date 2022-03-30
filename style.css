@@ -297,7 +297,7 @@ li{
 	
 @media only screen and (max-width: 280px){
 		.table_little{
-			font-size:px;
+			font-size:8px;
 			text-align:center;
 			border:1px solid white;
 			width:200px;
